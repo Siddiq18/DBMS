@@ -1,0 +1,12 @@
+Calling Procedure
+DECLARE
+  userid number;
+   username varchar(25);
+   BEGIN
+     userid := &userid;
+     username := '&username';
+      insertuser1(userid, username);
+     dbms_output.put_line('record inserted successfully');
+   END;
+ /
+PL/SQL procedure successfully completed.
